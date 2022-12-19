@@ -1,5 +1,11 @@
 package model;
 
-public class Admin {
+public class Admin extends Pessoa{
 
+	public Admin(String nome, String cpf, String senha, String endereco) {
+		super(nome, cpf, senha, endereco);
+		// TODO Auto-generated constructor stub
+	}
+
+	
 }
