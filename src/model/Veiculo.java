@@ -3,23 +3,25 @@ package model;
 import util.Contador;
 
 public class Veiculo {
-	
-	public enum Segmento{ CARRO, MOTO, CAMINHAO}
-	
+
+	public enum Segmento{ CARRO, MOTO, CAMINHAO }
+
 	private Integer id;
-	
+
 	private String marca;
 	private String modelo;
 	private String placa;
 	private String cor;
 	private String ano;
 	private Segmento segmento;
-	
-	
-	public Veiculo( String marca, String modelo, String placa, String cor, String ano, Segmento segmento) {
-	
+
+
+
+	public Veiculo( String marca, String modelo, String placa, String cor, 
+					String ano, Segmento segmento) {
+
 		this.id = Contador.proximo();
-		
+
 		this.marca = marca;
 		this.modelo = modelo;
 		this.placa = placa;
@@ -27,7 +29,7 @@ public class Veiculo {
 		this.ano = ano;
 		this.segmento = segmento;
 	}
-	
+
 	public Integer getId() {
 		return id;
 	}
@@ -71,4 +73,5 @@ public class Veiculo {
 		this.segmento = segmento;
 	}
 
-}
+
+}}
